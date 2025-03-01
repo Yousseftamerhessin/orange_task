@@ -1,9 +1,9 @@
 import 'package:final_project/shared_widgets/custom_navigationbar_container.dart';
 import 'package:final_project/presentation/browse_screen/browse_screen.dart';
-import 'package:final_project/presentation/cart/presentation/cart_screen.dart';
+import 'package:final_project/presentation/cart/screens/cart_screen.dart';
 import 'package:final_project/presentation/home/screens/home_screen.dart';
 import 'package:final_project/presentation/main_screen/cubit/main_cubit.dart';
-import 'package:final_project/presentation/profile/presentation/profile_screen.dart';
+import 'package:final_project/presentation/profile/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';

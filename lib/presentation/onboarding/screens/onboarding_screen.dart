@@ -47,7 +47,8 @@ class OnboardingScreen extends StatelessWidget {
               return AnimationLimiter(
                 child: AnimatedSwitcher(
                   duration: const Duration(milliseconds: 700),
-                  transitionBuilder: (Widget child, Animation<double> animation) {
+                  transitionBuilder:
+                      (Widget child, Animation<double> animation) {
                     return FadeTransition(
                       opacity: animation,
                       child: ScaleTransition(scale: animation, child: child),
@@ -67,9 +68,9 @@ class OnboardingScreen extends StatelessWidget {
                         SizedBox(
                           height: 247.5.h,
                           width: 253.09.w,
-                          child: Image.asset(context
-                              .read<OnboardCubit>()
-                              .listofImagesPAth[context.read<OnboardCubit>().index]),
+                          child: Image.asset(
+                              context.read<OnboardCubit>().listofImagesPAth[
+                                  context.read<OnboardCubit>().index]),
                         ),
                         SizedBox(height: 64.64.h),
                         Text(
@@ -86,9 +87,8 @@ class OnboardingScreen extends StatelessWidget {
                         ),
                         SizedBox(height: 16.h),
                         Text(
-                          context
-                              .read<OnboardCubit>()
-                              .listofSubtitle[context.read<OnboardCubit>().index],
+                          context.read<OnboardCubit>().listofSubtitle[
+                              context.read<OnboardCubit>().index],
                           textAlign: TextAlign.center,
                           style: GoogleFonts.plusJakartaSans(
                             color: AppColor.secondarytextColor,
@@ -110,23 +110,26 @@ class OnboardingScreen extends StatelessWidget {
                                 child: CircularProgressIndicator(
                                   value: 1.0,
                                   strokeWidth: 2.w,
-                                  valueColor:
-                                      AlwaysStoppedAnimation(AppColor.whitegreyColor),
+                                  valueColor: AlwaysStoppedAnimation(
+                                      AppColor.whitegreyColor),
                                 ),
                               ),
                               SizedBox(
                                 width: 94.r,
                                 height: 94.r,
                                 child: CircularProgressIndicator(
-                                  value: context.read<OnboardCubit>().percentage,
+                                  value:
+                                      context.read<OnboardCubit>().percentage,
                                   strokeWidth: 2.w,
-                                  valueColor:
-                                      AlwaysStoppedAnimation(AppColor.buttonColor),
+                                  valueColor: AlwaysStoppedAnimation(
+                                      AppColor.buttonColor),
                                 ),
                               ),
                               GestureDetector(
                                 onTap: () {
-                                  context.read<OnboardCubit>().nextPageOnboard();
+                                  context
+                                      .read<OnboardCubit>()
+                                      .nextPageOnboard();
                                 },
                                 onDoubleTap: () {
                                   context.read<OnboardCubit>().index ==
@@ -138,7 +141,8 @@ class OnboardingScreen extends StatelessWidget {
                                       ? Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (context) => LoginScreen()))
+                                              builder: (context) =>
+                                                  LoginScreen()))
                                       : null;
                                 },
                                 child: Container(

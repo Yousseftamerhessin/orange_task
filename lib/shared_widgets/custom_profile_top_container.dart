@@ -1,7 +1,7 @@
 import 'package:final_project/core/constants/app_color.dart';
 import 'package:final_project/shared_widgets/custom_app_bar_container_icon.dart';
 import 'package:final_project/models/user_model.dart';
-import 'package:final_project/presentation/profile/presentation/edit_profile_screen.dart';
+import 'package:final_project/presentation/profile/screens/edit_profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';

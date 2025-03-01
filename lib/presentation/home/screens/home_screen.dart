@@ -29,10 +29,9 @@ class HomeScreen extends StatelessWidget {
           },
           builder: (context, state) {
             final cubit = context.read<HomeCubit>();
-            
+
             if (cubit.userData == null) {
-              return Center(
-                  child: CircularProgressIndicator());
+              return Center(child: CircularProgressIndicator());
             }
 
             return SingleChildScrollView(
@@ -43,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                     user: cubit.userData!,
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20.0.w),
+                    padding: EdgeInsets.symmetric(horizontal: 16.0.w),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [

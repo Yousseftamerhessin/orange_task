@@ -3,9 +3,9 @@ import 'package:final_project/shared_widgets/custom_listnotifications.dart';
 import 'package:final_project/shared_widgets/custom_notification_tiel.dart';
 import 'package:final_project/shared_widgets/custom_profile_top_container.dart';
 import 'package:final_project/presentation/home/cubit/home_cubit.dart';
-import 'package:final_project/presentation/notification/presentation/notification_screen.dart';
+import 'package:final_project/presentation/notification/screens/notification_screen.dart';
 import 'package:final_project/presentation/payments/screens/payment_methods.dart';
-import 'package:final_project/presentation/privacy&policy/presentation/privacy_and_policy_screen.dart';
+import 'package:final_project/presentation/profile/screens/privacy_and_policy_screen.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

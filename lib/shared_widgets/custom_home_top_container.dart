@@ -1,7 +1,7 @@
 import 'package:final_project/core/constants/app_color.dart';
 import 'package:final_project/shared_widgets/custom_home_icon_container.dart';
 import 'package:final_project/models/user_model.dart';
-import 'package:final_project/presentation/notification/presentation/notification_screen.dart';
+import 'package:final_project/presentation/notification/screens/notification_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -13,8 +13,6 @@ class CustomHomeTopContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height: 552.h,
-      height: 565.h,
       width: double.infinity,
       decoration: const BoxDecoration(
         gradient: LinearGradient(

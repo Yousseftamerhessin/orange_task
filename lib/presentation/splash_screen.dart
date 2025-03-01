@@ -17,10 +17,8 @@ class SplashScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         duration: const Duration(milliseconds: 3515),
         onInit: () async {
-          debugPrint("onInit");
         },
         onEnd: () async {
-          debugPrint("onEnd 1");
         },
         childWidget: Column(
           mainAxisAlignment: MainAxisAlignment.center,
