@@ -1,0 +1,219 @@
+# Products Endpoints
+
+# Get All Products
+GET http://fakestoreapi.com/products HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Get Single Product by ID
+GET http://fakestoreapi.com/products/{id} HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Get All Categories
+GET http://fakestoreapi.com/products/categories HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Get Products by Category
+GET http://fakestoreapi.com/products/category/{category} HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Add New Product
+POST http://fakestoreapi.com/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Product Title",
+  "price": 29.99,
+  "description": "Product description",
+  "image": "https://i.pravatar.cc",
+  "category": "Category Name"
+}
+
+###
+
+# Update Product by ID
+PUT http://fakestoreapi.com/products/{id} HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Updated Product Title",
+  "price": 39.99,
+  "description": "Updated product description",
+  "image": "https://i.pravatar.cc",
+  "category": "Updated Category Name"
+}
+
+###
+# Delete Product by ID
+DELETE http://fakestoreapi.com/products/{id} HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Carts Endpoints
+
+# Get All Carts
+GET http://fakestoreapi.com/carts HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Get Single Cart by ID
+GET http://fakestoreapi.com/carts/{id} HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Get Carts by User ID
+GET http://fakestoreapi.com/carts/user/{userId} HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Add New Cart
+POST http://fakestoreapi.com/carts HTTP/1.1
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "date": "2023-02-19",
+  "products": [
+    { "productId": 1, "quantity": 2 },
+    { "productId": 2, "quantity": 1 }
+  ]
+}
+
+###
+
+# Update Cart by ID
+PUT http://fakestoreapi.com/carts/{id} HTTP/1.1
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "date": "2023-02-20",
+  "products": [
+    { "productId": 1, "quantity": 3 }
+  ]
+}
+
+###
+
+# Delete Cart by ID
+DELETE http://fakestoreapi.com/carts/{id} HTTP/1.1
+Content-Type: application/json
+###
+
+# Users Endpoints
+
+# Get All Users
+GET http://fakestoreapi.com/users HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Get Single User by ID
+GET http://fakestoreapi.com/users/{id} HTTP/1.1
+Content-Type: application/json
+###
+
+# Add New User
+POST http://fakestoreapi.com/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "username": "username",
+  "password": "password",
+  "name": {
+    "firstname": "First",
+    "lastname": "Last"
+  },
+  "address": {
+    "city": "City",
+    "street": "Street Name",
+    "number": 123,
+    "zipcode": "12345-6789",
+    "geolocation": {
+      "lat": "-37.3159",
+      "long": "81.1496"
+    }
+  },
+  "phone": "1-234-567-890"
+}
+
+###
+# Update User by ID
+PUT http://fakestoreapi.com/users/{id} HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "updated@example.com",
+  "username": "updated_username",
+  "password": "new_password",
+  "name": {
+    "firstname": "Updated First",
+    "lastname": "Updated Last"
+  },
+  "address": {
+    "city": "Updated City",
+    "street": "Updated Street",
+    "number": 321,
+    "zipcode": "98765-4321",
+    "geolocation": {
+      "lat": "-37.0000",
+      "long": "81.0000"
+    }
+  },
+  "phone": "1-987-654-3210"
+}
+
+###
+# Delete User by ID
+DELETE http://fakestoreapi.com/users/{id} HTTP/1.1
+Content-Type: application/json
+
+###
+# Authentication Endpoints
+
+# User Login
+POST http://fakestoreapi.com/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "username",
+  "password": "password"
+}
+###
+
+# User Register
+POST http://fakestoreapi.com/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "username": "username",
+  "password": "password",
+  "name": {
+    "firstname": "First",
+    "lastname": "Last"
+  },
+  "address": {
+    "city": "City",
+    "street": "Street Name",
+    "number": 123,
+    "zipcode": "12345-6789",
+    "geolocation": {
+      "lat": "-37.3159",
+      "long": "81.1496"
+    }
+  },
+  "phone": "1-234-567-890"
+}
